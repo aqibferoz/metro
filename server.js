@@ -3,7 +3,7 @@ var express = require('express');
 var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
-var User=require('./routes/user');
+var User=require('./server/routes/user');
 
 // database Connection
 mongoose.connect('mongodb://localhost/metro');
@@ -20,4 +20,4 @@ app.use(express.static(__dirname+'/public'));
 app.use(bodyParser.json());
 app.use('/api/user',User);
 app.listen(8000);
-console.log('running');
+console.log('running at port 8000');

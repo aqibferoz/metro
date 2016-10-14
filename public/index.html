@@ -1,153 +1,59 @@
-<!DOCTYPE html>
-<html ng-app="myApp">
-
+<!--A Design by AqibFeroz
+Author: W3layout
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
 <head>
+<title>Marital an Wedding Category Flat Bootstarp Resposive Website Template | Home :: w3layouts</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="Marital Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<link href="content/css/bootstrap-3.1.1.min.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="content/js/jquery.min.js"></script>
+<script src="content/js/bootstrap.min.js"></script>
+<link href="content/css/font-awesome.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<link href="content/css/style.css" rel='stylesheet' type='text/css' />
+<link href='//fonts.googleapis.com/css?family=Oswald:300,400,700' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Ubuntu:300,400,500,700' rel='stylesheet' type='text/css'>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-    <title>Pakistan Matrimonial</title>
-
-    <!-- Font Awesome -->
-    <link rel="stylesheet" hrsef="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
-
-    <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Material Design Bootstrap -->
-    <link href="css/mdb.min.css" rel="stylesheet">
-
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-
-    <!-- Template styles -->
-    <style rel="stylesheet">
-        /* TEMPLATE STYLES */
-        /* Necessary for full page carousel*/
-        
-        
-    </style>
-
+<!-- ============================  Navigation Start =========================== -->
+ 
 </head>
 
-<body>
-
-<header>
-  <div id="main" class="duplicate">
-  <!-- creating class mySidebar -->
-    <ul class="nav mySidebar">
-      <li>
-        <a href="#/Login" title="Home">
-          <!-- <span class="icon-stack">
-            <i class="icon-circle icon-stack-base"></i>
-            <i class="icon-home icon-light"></i>
-          </span> -->
-          <span class="text">Login</span>
-        </a>
-      </li>
-      <li>
-        <a href="#/Sign Up" title="About">
-          
-          <span class="text">Sign Up</span>
-        </a>
-      </li>
-      
-    </ul>
-  </div>
-  </header>
-<!-- header script -->
-<!-- <script>
-	document.getElementById('stickyContent').innerHTML = document.getElementById('main').innerHTML;
-</script> -->
-
-<!-- <div class="contentWrap">
-
-</div> -->
 
 
-
-<!-- navbar -->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
-
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i>
-        </button>
-
-        <div class="container">
-
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand" href="" target="_blank">Matrimonial</a>
-                <!--Links-->
-                <ul class="nav navbar-nav myNav">
-                    
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/home">Home</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/packages">Packages</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/booking">Bookings</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#/movies">About us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact us</a>
-                    </li>
-                     <li class="nav-item">
-                        <a class="btn btn-danger" href="#">Admin Panel</a>
-                    </li>
-                </ul>
-                <!--Search form-->
+<body ng-app="myApp">
+<div ng-include="'content/views/header.html'"></div>
 
 
-               
-            </div>
-            <!--/.Collapse content-->
-
-        </div>
-
-    </nav>
-    <!--/.Navbar-->
-    <div class="container-fluid">
-   <div ng-view></div>
-</div>
+<!-- ============================  Navigation End ============================ -->
+<div ng-view></div>
 
 
-   <div ng-include="'views/footer.html'"></div>
+<div ng-include="'content/views/footer.html'"></div>
 
-        
-
-   	 <!-- SCRIPTS -->
+    <!-- SCRIPTS -->
         <script src = "app/lib/bower_components/angular/angular.js"></script>
         <script src = "app/lib/bower_components/angular-route/angular-route.js"></script>
 
 	<script src = "app/app.js"></script>
-    <script type="text/javascript" src = "app/modules/core/LoginController.js"></script>
+    <script src = "app/routes.js"></script>
+
+    <script type="text/javascript" src="content/js/jquery.flexisel.js"></script>
+
+    <script src = "app/modules/core/LoginController.js"></script>
     <script src = "app/modules/core/homeController.js"></script>
-     <script type="text/javascript" src = "app/modules/core/formController.js"></script>
+        <script src = "app/modules/core/aboutController.js"></script>
 
-
-   
-
-    <!-- JQuery -->
-    <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
-
-    <!-- Bootstrap tooltips -->
-    <script type="text/javascript" src="js/tether.min.js"></script>
-
-    <!-- Bootstrap core JavaScript -->
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-
-    <!-- MDB core JavaScript -->
-    <script type="text/javascript" src="js/mdb.min.js"></script>
 
 
 </body>
-
-</html>
+</html>	
